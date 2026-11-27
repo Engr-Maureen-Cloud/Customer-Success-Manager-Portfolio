@@ -1,0 +1,10 @@
+# Scenario 2: Rescuing an at-risk renewal
+
+Simulation with a fictional 120-seat law firm, using Cal.com as the real product. Not paid client work.
+
+Simulated result: health score 21.8 to 72.3 and renewal agreed.
+
+## What is in this folder
+- spreadsheets/: health score model and risk playbook
+- documents/: outreach kit
+- images/: HubSpot, workflow and ticket screenshots
