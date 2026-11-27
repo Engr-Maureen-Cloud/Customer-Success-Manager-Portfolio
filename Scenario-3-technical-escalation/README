@@ -1,0 +1,9 @@
+# Scenario 3: Technical escalation, expired certificate webhook failure
+
+Simulation with a fictional healthcare customer. Built and tested in a local environment.
+
+Code: https://github.com/Engr-Maureen-Cloud/webhook-expired-cert-demo
+
+## What is in this folder
+- documents/: HubSpot pack, runbook, post-incident review
+- images/: architecture diagram and terminal screenshots
