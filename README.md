@@ -22,3 +22,7 @@ Simulation portfolio with fictional customers, using Cal.com as the real product
 - `documents/`: plans, business review and post-incident review (PDFs)
 - `spreadsheets/`: health score model and adoption tracker
 - `images/`: screenshots
+- ## Projects files
+- - [Scenario 1: Onboarding] https://app.notion.com/p/Scenario-1-Onboarding-BrightPath-Physio-on-Cal-com-41428d4b8e7c81b282f8e10f63965838?source=copy_link
+- [Scenario 2: Renewal save] https://app.notion.com/p/Scenario-2-Northwind-Legal-At-Risk-Renewal-Save- 41728d4b8e7c81919907c4c6330ead61?source=copy_link
+- [Scenario 3: Technical escalation] https://app.notion.com/p/Scenario-3-Meridian-Health-Network-Technical-Escalation-41c28d4b8e7c81488de4e6a3cb7a2a50?source=copy_link
