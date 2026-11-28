@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maureen Orkuma's Customer Success and Technical Account Management portfolio. Explore onboarding, retention and technical escalation simulations.">
+  <title>Maureen Orkuma | Customer Success & Technical Account Management</title>
+
+  <style>
+    :root {
+      --navy: #12263A;
+      --orange: #E8762B;
+      --cream: #F7F5F0;
+      --muted: #9AA6B2;
+      --white: #FFFFFF;
+      --line: #DCE2E7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--navy);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 22px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 100px 0 95px;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 66px);
+      line-height: 1.12;
+      max-width: 850px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #D4DDE5;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .primary {
+      background: var(--orange);
+      color: white;
+    }
+
+    .secondary {
+      border: 1px solid #8292A2;
+      color: white;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-label {
+      color: var(--orange);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      margin-bottom: 18px;
+      line-height: 1.25;
+    }
+
+    .intro {
+      max-width: 750px;
+      color: #526170;
+      margin-bottom: 35px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .project {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-number {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .project h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: #586777;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .tag {
+      background: #EDF1F4;
+      color: var(--navy);
+      padding: 5px 9px;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+
+    .project-link {
+      color: #C75D1C;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .skills-section {
+      background: white;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .skill {
+      padding: 22px;
+      background: var(--cream);
+      border-left: 3px solid var(--orange);
+    }
+
+    .skill h3 {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .skill p {
+      color: #586777;
+      font-size: 14px;
+    }
+
+    .about {
+      max-width: 780px;
+    }
+
+    .about p {
+      color: #526170;
+      margin-bottom: 18px;
+    }
+
+    .notice {
+      background: #FFF0E5;
+      border-left: 4px solid var(--orange);
+      padding: 22px;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #61432F;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #D4DDE5;
+      margin: 15px auto 25px;
+      max-width: 600px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .contact-links a:hover {
+      color: var(--orange);
+    }
+
+    footer {
+      background: #0C1B2A;
+      color: #AAB6C1;
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        align-items: flex-start;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">MO.</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Customer Success | Technical Account Management</div>
+
+        <h1>Helping customers succeed through adoption, retention and technical problem-solving.</h1>
+
+        <p>
+          I'm Maureen Orkuma, a customer success professional with
+          4 years of experience and a technical account management edge.
+          I work across customer onboarding, product adoption, account
+          health, retention, renewals and technical escalations.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="#projects">Explore My Work</a>
+          <a class="btn secondary" href="https://www.upwork.com/freelancers/~017af6b9417474e632" target="_blank" rel="noopener noreferrer">View Upwork Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <div class="section-label">About Me</div>
+        <h2>Customer relationships with a technical edge.</h2>
+
+        <p>
+          My experience spans customer-facing operations, account
+          management, sales and post-sale customer success. I focus on
+          helping customers understand products, achieve adoption goals,
+          resolve issues and maintain long-term value.
+        </p>
+
+        <p>
+          I'm also developing my cloud computing and DevOps knowledge
+          to strengthen my ability to work with technical teams,
+          understand integrations and communicate technical issues
+          clearly to customers.
+        </p>
+
+        <p>
+          This portfolio demonstrates how I approach customer success
+          and technical account management through practical,
+          documented simulations.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">Portfolio Projects</div>
+        <h2>Three customer success scenarios.</h2>
+
+        <p class="intro">
+          Each project demonstrates a different part of the customer
+          lifecycle, from onboarding and adoption to renewal protection
+          and technical incident management.
+        </p>
+
+        <div class="projects">
+
+          <article class="project">
+            <div class="project-number">SCENARIO 01 / ONBOARDING</div>
+            <h3>Customer Onboarding & Adoption</h3>
+            <p>
+              A simulated 90-day onboarding program for a fictional
+              six-clinic physiotherapy group adopting Cal.com.
+              Includes a success plan, kickoff, technical setup,
+              training, feedback and business review.
+            </p>
+            <div class="tags">
+              <span class="tag">Onboarding</span>
+              <span class="tag">Adoption</span>
+              <span class="tag">Success Planning</span>
+              <span class="tag">HubSpot</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/Engr-Maureen-Cloud/Customer-Success-Manager-Portfolio/tree/main/Scenario-1-Onboarding"
+               target="_blank" rel="noopener noreferrer">
+              Explore Scenario 1 →
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project-number">SCENARIO 02 / RETENTION</div>
+            <h3>At-Risk Renewal & Retention</h3>
+            <p>
+              A simulated renewal rescue for a fictional 120-seat law
+              firm. Includes a customer health score model, risk
+              assessment, stakeholder communication and a renewal plan.
+            </p>
+            <div class="tags">
+              <span class="tag">Retention</span>
+              <span class="tag">Renewals</span>
+              <span class="tag">Health Scoring</span>
+              <span class="tag">Risk Management</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/Engr-Maureen-Cloud/Customer-Success-Manager-Portfolio/tree/main/Scenario-2-Renewal-Retention"
+               target="_blank" rel="noopener noreferrer">
+              Explore Scenario 2 →
+            </a>
+          </article>
+
+          <article class="project">
+            <div class="project-number">SCENARIO 03 / TECHNICAL ESCALATION</div>
+            <h3>Webhook Failure & TLS Incident</h3>
+            <p>
+              A simulated technical escalation involving a webhook
+              delivery failure caused by an expired TLS certificate.
+              Includes a Python and Flask demonstration and
+              incident documentation.
+            </p>
+            <div class="tags">
+              <span class="tag">Technical Support</span>
+              <span class="tag">Webhooks</span>
+              <span class="tag">Python</span>
+              <span class="tag">TLS</span>
+            </div>
+            <a class="project-link"
+               href="https://github.com/Engr-Maureen-Cloud/Customer-Success-Manager-Portfolio/tree/main/Scenario-3-technical-escalation"
+               target="_blank" rel="noopener noreferrer">
+              Explore Scenario 3 →
+            </a>
+          </article>
+
+        </div>
+
+        <div style="margin-top:30px">
+          <a class="project-link"
+             href="https://app.notion.com/p/Maureen-Orkuma-Customer-Success-and-Technical-Account-Management-Portfolio-41428d4b8e7c8128ba86c7ad5455ef78?source=copy_link"
+             target="_blank" rel="noopener noreferrer">
+            View detailed Notion portfolio →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-label">Capabilities & Tools</div>
+        <h2>How I work.</h2>
+
+        <div class="skills">
+          <div class="skill">
+            <h3>Customer Success</h3>
+            <p>Onboarding, adoption, customer engagement, account health, retention and renewals.</p>
+          </div>
+
+          <div class="skill">
+            <h3>Technical Account Management</h3>
+            <p>Technical issue investigation, escalation coordination, integrations and customer communication.</p>
+          </div>
+
+          <div class="skill">
+            <h3>CRM & Customer Operations</h3>
+            <p>HubSpot, Zendesk, GoHighLevel and customer account records.</p>
+          </div>
+
+          <div class="skill">
+            <h3>Technical Learning & Projects</h3>
+            <p>Cal.com, Python, Flask, GitHub, cloud computing and DevOps fundamentals.</p>
+          </div>
+
+          <div class="skill">
+            <h3>Reporting & Analysis</h3>
+            <p>Excel, Google Sheets, customer health tracking and adoption monitoring.</p>
+          </div>
+
+          <div class="skill">
+            <h3>Cross-functional Collaboration</h3>
+            <p>Customer communication, stakeholder management and technical escalation coordination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-label">Transparency</div>
+        <h2>About these portfolio simulations.</h2>
+
+        <div class="notice">
+          This is a self-directed portfolio using Cal.com as the real
+          product. The customer organizations, individuals, scenario
+          figures and business outcomes are fictional and simulated.
+          The documents, spreadsheets, code, tools and terminal
+          demonstrations are real work created for these exercises.
+          I am not affiliated with Cal.com, and these are not paid
+          client engagements or verified customer results.
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-label">Let's Connect</div>
+        <h2>Interested in working together?</h2>
+
+        <p>
+          I'm open to Customer Success and Technical Account
+          Management opportunities where I can help customers
+          achieve value and build lasting product relationships.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://www.upwork.com/freelancers/~017af6b9417474e632"
+             target="_blank" rel="noopener noreferrer">Upwork</a>
+
+          <a href="https://github.com/Engr-Maureen-Cloud"
+             target="_blank" rel="noopener noreferrer">GitHub</a>
+
+          <a href="https://app.notion.com/p/Maureen-Orkuma-Customer-Success-and-Technical-Account-Management-Portfolio-41428d4b8e7c8128ba86c7ad5455ef78?source=copy_link"
+             target="_blank" rel="noopener noreferrer">Notion Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Maureen Orkuma. Customer Success & Technical Account Management Portfolio.
+  </footer>
+
+</body>
+</html>
